@@ -1,0 +1,351 @@
+.movablearea {
+    padding: 10px;
+
+    .ttl_categarea_titleory {
+        margin-bottom: 10px;
+        margin-top: 100px;
+        font-size: 30px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 150px;
+
+        .drop_down {
+            position: relative;
+            height: 110px;
+            width: 110px;
+            text-align: center;
+            margin: 10px;
+            border: 1px solid #dbdcd9;
+            border-radius: 10%;
+
+            img {
+                width: 65px;
+                height: auto;
+            }
+
+            span {
+                font-size: 10px;
+                letter-spacing: 2px;
+
+
+
+                //  プラス
+                p {
+                    position: relative;
+
+                    // 縦の線
+                    span::before {
+                        background-color: #777;
+                        /* 線の色 */
+                        content: '';
+                        height: 1px;
+                        /* 線の太さ */
+                        position: absolute;
+                        right: 25px;
+                        top: 50%;
+                        /* 線の位置を縦中央に */
+                        transform: rotate(90deg);
+                        /* 線を縦に */
+                        transition: transform .3s ease-in-out;
+                        width: 10px;
+                        /* 線の幅 */
+                        margin-top: -10px;
+                        margin-right: -22px;
+                    }
+
+                    // 横の線
+                    span::after {
+                        background-color: #777;
+                        /* 線の色 */
+                        content: '';
+                        height: 1px;
+                        /* 線の太さ */
+                        position: absolute;
+                        right: 25px;
+                        top: 50%;
+                        /* 線の位置を縦中央に */
+                        transition: opacity .3s ease-in-out;
+                        width: 10px;
+                        /* 線の幅 */
+                        margin-top: -10px;
+                        margin-right: -22px;
+                    }
+                }
+            }
+
+            div {
+                position: relative;
+
+                ul {
+                    position: absolute;
+                    margin-left: -6px;
+                    display: none;
+                    margin-top: 9px;
+                    margin-left: 10px;
+
+                    li a {
+                        padding: 5px;
+                        margin-left: -5px;
+                        margin-right: -5px;
+                        margin-bottom: -5px;
+                        display: block;
+                        color: #777;
+                        text-decoration: none;
+                        font-size: 10px;
+                        margin-top: 5px;
+                        margin-left: 20px;
+                        text-align: center;
+                    }
+
+                    li a:hover {
+                        color: gray;
+                    }
+                }
+            }
+        }
+
+        .nomal {
+            position: relative;
+            border: 1px solid #dbdcd9;
+            border-radius: 10%;
+            height: 110px;
+            width: 110px;
+            text-align: center;
+            margin: 10px;
+
+            img {
+                width: 65px;
+                height: auto;
+            }
+
+            span {
+                font-size: 10px;
+                letter-spacing: 2px;
+            }
+
+            span::after {
+                content: '';
+                display: block;
+                position: absolute;
+                right: 7px;
+                top: calc(50% - 3px);
+                border-left: 1px solid #777;
+                border-top: 1px solid #777;
+                width: 5px;
+                height: 5px;
+                transform: rotate(135deg);
+                margin-top: 37px;
+                margin-right: -3px;
+            }
+        }
+    }
+}
+
+// 新着アイテム
+.clearfix {
+    position: relative;
+
+    h2 {
+        font-size: 30px;
+        padding: 0 30px;
+        margin-bottom: 10px;
+        margin-top: 80px;
+    }
+
+    #new_arrivalItem {
+        padding: 0 30px;
+        box-sizing: border-box;
+        width: 94%;
+        margin: 0 auto;
+
+
+        .scrollable {
+            overflow-x: scroll;
+            overflow-y: hidden;
+
+
+            .new_arrivalList {
+                display: flex;
+                width: 1365px;
+                margin: 20px 0;
+                box-sizing: border-box;
+            }
+
+            .clearfix {
+                zoom: 1;
+
+                .newarrival1 {
+                    float: left;
+                    width: 195px;
+                    height: 300px;
+
+                    .listInner {
+                        text-align: center;
+                        font-size: 11px;
+
+                        a {
+
+                            .photo {
+                                img {
+                                    max-width: 100%;
+                                }
+                            }
+
+                            .ico-box {
+                                text-align: left;
+
+                                .new {
+                                    color: red;
+                                }
+
+                                .reservation {
+                                    color: skyblue;
+                                }
+
+                                .restock {
+                                    color: orange;
+                                }
+                            }
+
+                            .textOverflow {
+                                box-sizing: border-box;
+                                text-align: left;
+                            }
+
+                            .price {
+                                line-height: 1.1;
+                                margin: 0;
+                                text-align: left;
+                                float: left;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+    .scroll-left {
+        top: 173px;
+        left: 0;
+        transform: translateX(-5px);
+        position: absolute;
+        border: 1px solid #dadada;
+        width: 30px;
+        height: 30px;
+        box-sizing: border-box;
+        background-color: white;
+        display: block;
+        transition: .3s;
+        margin-left: 65px;
+    }
+
+    .scroll-left::before {
+        width: 6px;
+        height: 6px;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: rotate(-45deg)translate(1px, -3px);
+        content: '';
+        display: block;
+    }
+
+    .scroll-right {
+        top: 173px;
+        right: 0;
+        transform: translateX(5px);
+        position: absolute;
+        border: 1px solid #dadada;
+        width: 30px;
+        height: 30px;
+        box-sizing: border-box;
+        background-color: white;
+        transition: .3s;
+        margin-right: 65px;
+    }
+
+    .scroll-right::before {
+        width: 6px;
+        height: 6px;
+        border-top: 1px solid #575757;
+        border-right: 1px solid #575757;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: rotate(45deg)translate(-5px, 0px);
+        content: '';
+        display: block;
+    }
+}
+// フッター
+footer{
+    background-color: rgb(218, 236, 244);
+    padding-top: 20px;
+    margin-top: 100px;
+.footer-main{
+    display: flex;
+    margin: 50px 200px;
+    
+    .footer-left{
+        h3{
+            font-size: 20px;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        img{
+            width: 300px;
+            height: auto;
+        }
+    }
+    .footer-mannaka{
+        padding: 0 150px;
+        
+        h3{
+            font-size: 20px;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        p{
+            padding-bottom: 10px;
+        }
+    }
+    .footer-right{
+        
+        h3{
+            font-size: 20px;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        p{
+            padding-bottom: 10px;
+        }
+    }
+}
+.icon-f{
+    display: flex;
+    margin: 20px 500px;
+    padding-bottom: 30px;
+    img{
+        height: 30px;
+        width: auto;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+    p{
+        font-size: 15px;
+        margin-top: 5px;
+    }
+}
+}

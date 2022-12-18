@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a4ce290d17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>ec_scss</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <div id="header">
+            <div class="header-right">
+                <h1>CLOSET</h1>
+            </div>
+
+            <div class="header-left">
+                <ul class="menu">
+                    <li>
+                        <a href=""><i class="fa-regular fa-heart"></i>お気に入り
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-cart-shopping"></i>カート
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-regular fa-user"></i>ログイン
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-grip"></i>ギャラリー
+                        </a>
+                    </li>
+                </ul>
+                <div id="ham-btn" class="js-hamburger hamburger hide">
+                    <span></span>
+                </div>
+
+                <nav class="nav">
+                    <ul class="nav_menu_ul">
+                        <li class="nav_menu_li"><a href="#">TOP</a></li>
+                        <li class="nav_menu_li"><a href="#">ABOUT</a></li>
+                        <li class="nav_menu_li"><a href="#">BLOG</a></li>
+                        <li class="nav_menu_li"><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <!-- <div id="search_in" class="search_box">
+            <form action="">
+                <input type="text" name="" id="">
+                <input type="sudmit" value="">
+            </form>
+
+        </div> -->
+
+        <div class="main_slider">
+            <ul class="slide-items">
+                <li><img src="./img/mainvisu1.gif" alt="main"></li>
+                <li><img src="./img/mainvisu2.jpeg" alt="main"></li>
+                <li><img src="./img/mainvisu3.gif" alt="main"></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- aya -->
+    <!-- category -->
+    <div class="movablearea">
+        <div class="brand-free">
+            <div class=" ttl_categarea_titleory">CATEGORY</div>
+            <ul>
+                <!-- パンツ -->
+                <li class='drop_down'>
+                    <a class="icon">
+                        <div><img src="./img/bottom.png" alt="bottom"></div>
+                        <span>
+                            BOTTOMS
+                            <p>
+                                <!-- プラスの縦線 -->
+                                <span></span>
+                                <!-- プラスの横線 -->
+                                <span></span>
+                            </p>
+                        </span>
+                    </a>
+                    <div>
+                        <ul>
+                            <!-- PANTSのリンク貼る -->
+                            <li class="ctg">
+                                <a href="https://www.palcloset.jp/display/display/?b=mystic&c=13&type=01">PANTS</a>
+                            </li>
+                            <!-- SKIRTのリンク貼る -->
+                            <li class="ctg">
+                                <a href="https://www.palcloset.jp/display/display/?c=15&type=01&b=mystic">SKIRT</a>
+                            </li>
+                            </う>
+                    </div>
+                </li>
+                <!-- トップス -->
+                <li class="drop_down">
+                    <a class="icon">
+                        <div><img src="./img/tops.png" alt="top"></div>
+                        <span>
+                            TOPS
+                            <p>
+                                <span></span>
+                                <span></span>
+                            </p>
+                        </span>
+                    </a>
+                    <div>
+                        <ul>
+                            <!-- kintのリンクを貼る -->
+                            <li class="ctg">
+                                <a href="https://www.palcloset.jp/display/display/?c=1104&type=01&b=mystic">KNIT</a>
+                            </li>
+                            <!-- SHIRTS・BLOUSEのリンクを貼る -->
+
+                            <li class="ctg">
+                                <a
+                                    href="https://www.palcloset.jp/display/display/?c=1102&type=01&b=mystic">SHIRTS・BLOUSE</a>
+                            </li>
+                            <!-- ベストのリンクを貼る -->
+                            <li class="ctg">
+                                <a href="https://www.palcloset.jp/display/display/?c=1105&type=01&b=mystic">VEST</a>
+                            </li>
+                            <!-- cutのリンクを貼る -->
+                            <li class="ctg">
+                                <a href="https://www.palcloset.jp/display/display/?b=mystic&c=1101&type=01">CUT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- カーディガン -->
+                <li class="nomal">
+                    <a href="https://www.palcloset.jp/display/display/?b=mystic&c=1108&type=01">
+                        <div><img src="./img/cardigan.png" alt="CARDIGAN"></div>
+                        <span>
+                            CARDIGAN
+                        </span>
+                    </a>
+                </li>
+                <!-- ワンピース -->
+                <li class="nomal">
+                    <a href="https://www.palcloset.jp/display/display/?b=mystic&c=16&type=01">
+                        <div><img src="./img/onepice.png" alt="onepice"></div>
+                        <span>
+                            ONEPIECE
+                        </span>
+                    </a>
+                </li>
+                <!-- アウター -->
+                <li class="nomal">
+                    <a href="https://www.palcloset.jp/display/display/?c=12&type=01&b=mystic">
+                        <div><img src="./img/outer.png" alt="outer"></div>
+                        <span>OUTER<span>
+                    </a>
+                </li>
+                <!-- bag-->
+                <li class="nomal">
+                    <a href="https://www.palcloset.jp/display/display/?b=mystic&c=17&type=01">
+                        <div><img src="./img/bag.png" alt="bag"></div>
+                        <span>
+                            BAG
+                        </span>
+                    </a>
+                </li>
+                <!-- シューズ -->
+                <li class="nomal">
+                    <a href="https://www.palcloset.jp/display/display/?b=mystic&c=18&type=01">
+                        <div><img src="./img/shose.png" alt=""></div>
+                        <span>
+                            SHOSE
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 新着アイテム -->
+    <article class="clearfix">
+        <div id="rightContentMain">
+            <div id="newarrivelItem">
+                <section id="idxnew_aarivelItem" class="section">
+                    <div id="new_arriveHeager" class="clearfix lined sectionHeader">
+                        <!-- arriveのロゴ入れる -->
+                        <h2>
+                            新着アイテム
+                        </h2>
+                    </div>
+                    <div style="opacity: 1;" id="new_arrivalItem">
+                        <div class="scrollable">
+                            <ul class="new_arrivalList clearfix" style="width: 1365px;">
+                                <!-- ストール１ -->
+                                <li class="newarrival1">
+                                    <div class="listInner clearfix">
+                                        <p class="newarrival clearfix"></p>
+                                        <!-- リンクに飛ぶ -->
+                                        <a
+                                            href="https://www.palcloset.jp/display/item/MYZ1022216A0002/?b=mystic&cl=0110">
+
+                                            <p class="photp">
+                                                <img src="./img/newarrive1.jpg" alt="">
+                                            </p>
+                                            <p class="ico-box">
+                                                <span class="new_ico new">NEW</span>
+                                                <span class="new_ico washable">手洗い可</span>
+                                            </p>
+                                            <div class="textOverflow">
+                                                <p>ボーダーBIGストール</p>
+                                            </div>
+                                            <p class="price price_rigth">
+                                                <span class="tt01">￥5,720</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <!-- ストール２ -->
+                                <li class="newarrival1">
+                                    <div class="listInner clearfix">
+                                        <p class="newarrival clearfix"></p>
+                                        <a
+                                            href="https://www.palcloset.jp/display/item/MYZ1022216A0003/?b=mystic&cl=0300">
+                                            <p class="photp">
+                                                <img src="./img/newarrive2.jpg" alt="">
+                                            </p>
+                                            <p class="ico-box">
+                                                <span class="new_ico new">NEW</span>
+                                                <span class="new_ico washable">手洗い可</span>
+                                            </p>
+                                            <div class="textOverflow">
+                                                <p>MIX BIGストール</p>
+                                            </div>
+                                            <p class="price price_rigth">
+                                                <span class="tt01">￥5,720</span>
+                                            </p>
+                                    </div>
+                                </li>
+                                <li class="newarrival1">
+                                    <div class="listInner clearfix">
+                                        <p class="newarrival clearfix"></p>
+                                        <!-- パンツ -->
+                                        <p class="photp">
+                                            <a href="https://www.palcloset.jp/display/item/MYZ1022302A0003/?b=mystic">
+                                                <img src="./img/newarrive3.jpg" alt="">
+                                        </p>
+                                        <p class="ico-box">
+                                            <span class="new_ico new">NEW</span>
+                                            <span class="new_ico restock">再入荷</span>
+                                            <span class="new_ico reservation">予約</span>
+                                        </p>
+                                        <div class="textOverflow">
+                                            <p>[mline] シンプルショートパンツ</p>
+                                        </div>
+                                        <p class="price price_rigth">
+                                            <span class="tt01">￥6,600</span>
+                                        </p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="newarrival1">
+                                    <div class="listInner clearfix">
+                                        <p class="newarrival clearfix"></p>
+                                        <a href="">
+                                            <!-- ベストニット -->
+                                            <p class="photp">
+                                                <a
+                                                    href="https://www.palcloset.jp/display/item/MYZ1022305A0010/?b=mystic&cl=0800">
+                                                    <img src="./img/newarrive4.jpg" alt="">
+                                            </p>
+                                            <p class="ico-box">
+                                                <span class="new_ico new">NEW</span>
+                                                <span class="new_ico reservation">予約</span>
+                                                <span class="new_ico washable">手洗い可</span>
+                                            </p>
+                                            <div class="textOverflow">
+                                                <p>[mline] ケーブル2WAYベストニット</p>
+                                            </div>
+                                            <p class="price price_rigth">
+                                                <span class="tt01">￥8,250</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="newarrival1">
+                                    <div class="listInner clearfix">
+                                        <p class="newarrival clearfix"></p>
+                                        <a href="">
+                                            <!-- ニットオールインワン -->
+                                            <p class="photp">
+                                                <a
+                                                    href="https://www.palcloset.jp/display/item/MYZ1022302A0001/?b=mystic&cl=0920">
+                                                    <img src="./img/newarrive5.jpg" alt="">
+                                            </p>
+                                            <p class="ico-box">
+                                                <span class="new_ico new">NEW</span>
+                                                <span class="new_ico reservation">予約</span>
+                                            </p>
+                                            <div class="textOverflow">
+                                                <p>ニットオールインワン</p>
+                                            </div>
+                                            <p class="price price_rigth">
+                                                <span class="tt01">￥11,550</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="newarrival1">
+                                    <div class="listInner clearfix">
+                                        <p class="newarrival clearfix"></p>
+                                        <a href="">
+                                            <!-- ニットリブパンツ -->
+                                            <p class="photp">
+                                                <a
+                                                    href="https://www.palcloset.jp/display/item/MYZ1022102A0012/?b=mystic">
+                                                    <img src="./img/newarrive6.jpg" alt="">
+                                            </p>
+                                            <p class="ico-box">
+                                                <span class="new_ico restock">再入荷</span>
+                                                <span class="new_ico washable">手洗い可</span>
+                                            </p>
+                                            <div class="textOverflow">
+                                                <p>ニットリブパンツ</p>
+                                            </div>
+                                            <p class="price price_rigth">
+                                                <span class="tt01">￥7,150
+                                                </span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="newarrival1">
+                                    <div class="listInner clearfix">
+                                        <p class="newarrival clearfix"></p>
+
+                                            <!-- ジャガードクルーvニット -->
+                                            <p class="photp">
+                                                <a href="https://www.palcloset.jp/display/item/MYZ1022305A0006/?b=mystic&cl=0920"></a>
+                                                <img src="./img/newarrive7.jpg" alt="">
+                                            </p>
+                                            <p class="ico-box">
+                                                <span class="new_ico reservation">予約</span>
+                                            </p>
+                                            <div class="textOverflow">
+                                                <p>ジャガードクルーVニット</p>
+                                            </div>
+                                            <p class="price price_rigth">
+                                                <span class="tt01">￥9,900</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="newarrival1">
+                                    <div class="listInner clearfix">
+                                        <p class="newarrival clearfix"></p>
+                                        <!-- ジャガードクルーvニット -->
+                                        <p class="photp">
+                                            <a
+                                                href="https://www.palcloset.jp/display/item/MYZ1022307A0002/?b=mystic&cl=0200"></a>
+                                            <img src="./img/newarrive8.jpg" alt="">
+                                        </p>
+                                        <p class="ico-box">
+                                            <span class="new_ico reservation">予約</span>
+                                        </p>
+                                        <div class="textOverflow">
+                                            <p>ショートファーベスト</p>
+                                        </div>
+                                        <p class="price price_rigth">
+                                            <span class="tt01">￥10,450</span>
+                                        </p>
+                                        </a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- すべて見る　リンク貼る -->
+                    <h3>
+                        <a class="more-link" href="alcloset.jp/display/display/?b=mystic"></a>
+                    </h3>
+                    <a class="scroll-left" style=" display: block;"></a>
+                    <a class="scroll-right" style="display: block;"></a>
+                </section>
+            </div>
+        </div>
+
+        <!-- ニュースタブ！ -->
+        <div class="tab_box">
+            <div class="btn_area">
+                <p class="tab_btn active">NEWS</p>
+                <p class="tab_btn">NEWS2</p>
+                <p class="tab_btn">map</p>
+            </div>
+            <div class="panel_area">
+            </div>
+            <div class="tab_panel active">
+                <p class="photo">
+                    <a href="https://www.palcloset.jp/display/article/detail/?acd=s_210224mys_001&b=mystic">
+                        <img src="./img/tenpo1.jpg" alt="">
+                    </a>
+                </p>
+                <a href="">
+                    <p class="time">
+                        2021.02.24
+                    </p>
+
+                    <div class="textOverflow">
+                        <p>3.3 WED. NEW OPEN</p>
+                    </div>
+                </a>
+
+            </div>
+            <div class="tab_panel">
+                <p class="photo">
+                    <a href="https://www.palcloset.jp/display/article/detail/?acd=221005mys_001&b=mystic">
+                        <img src="./img/news1.jpg" alt="">
+                    </a>
+                </p>
+                <a href="https://www.palcloset.jp/display/article/detail/?acd=221005mys_001&b=mystic">
+                    <p class="time">2022.10.05</p>
+                    <p class="brand">mystic</p>
+                    <div class="textOverflow">
+                        <p>mystic2大ミニボトムをピックアップ。</p>
+                    </div>
+                </a>
+
+            </div>
+            <div class="tab_panel">
+                <p class="photo">
+                    <a href="https://www.palcloset.jp/addons/pal/shoplist/?b=mystic">
+                        <img src="./img/map.jpeg" alt="">
+                    </a>
+
+                </p>
+
+            </div>
+        </div>
+
+        </div>
+    </article>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-left">
+                <h3>PICK UP</h3>
+                <img src="./img/news4.jpg" alt="">
+            </div>
+            <div class="footer-mannaka">
+                <h3>CONTENTS</h3>
+                <p> <a href="https://www.palcloset.jp/display/freepage/?id=brandlist">ブランド一覧</p></a> 
+                <p> <a href="https://www.palcloset.jp/addons/pal/blog/list/">ショップブログ</p></a> 
+                <p> <a href="https://www.palcloset.jp/addons/coordinate/list/"></a> コーディネート</p>
+                <p> <a href="https://www.palcloset.jp/display/article/list/"> ニュース</p></a>
+                <p> <a href="https://www.palcloset.jp/addons/pal/ranking/">ランキング</p></a> 
+            </div>
+            <div class="footer-right">
+                <h3>INFORMATION</h3>
+                <P> <a href="https://www.palcloset.jp/display/freepage/?id=help_guide_01"> 初めてのお客様</P></a>
+                <P> <a href="https://www.palcloset.jp/display/freepage/?id=help">ショッピングガイド</P></a> 
+                <P> <a href="https://www.palcloset.jp/display/freepage/?id=help#area_contact">お問い合和わせ</P></a> 
+                <P> <a href="http://www.palgroup.co.jp/company/">会社概要</P></a> 
+                <P>チャットカスタマーサポート</P>
+            </div>
+        </div>
+        <div class="icon-f">
+            <img src="./img/line-me.png" alt="LINE">
+            <p> <a href="https://page.line.me/palcloset?openQrModal=true">line</p></a> 
+            <img src="./img/instagram-new.png" alt="INSTAGRSM">
+            <p> <a href="https://www.instagram.com/palcloset_onlinestore/">instagram</p></a> 
+            <img src="./img/facebook-new.png" alt="FACEBOOK">
+            <p> <a href="https://www.facebook.com/PALCLOSET.OnlineStore">facebook</p></a> 
+            <img src="./img/youtube--v1.png" alt="YOURUBE">
+            <p> <a href="https://www.youtube.com/channel/UCfXEj-eIE4WCBTc66fist1A/videos?app=desktop">youtube</p></a> 
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
