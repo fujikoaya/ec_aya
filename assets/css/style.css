@@ -152,6 +152,8 @@ No newline at end of file .tab_box {
 
 .movablearea {
   padding: 10px;
+  max-width: 1450px;
+  margin: 0 auto;
 }
 .movablearea .ttl_categarea_titleory {
   margin-bottom: 10px;
@@ -279,18 +281,19 @@ No newline at end of file .tab_box {
 
 .clearfix {
   position: relative;
+  max-width: 1450px;
+  margin: 0 auto;
 }
 .clearfix h2 {
   font-size: 30px;
   padding: 0 30px;
   margin-bottom: 10px;
   margin-top: 80px;
+  text-align: center;
 }
 .clearfix #new_arrivalItem {
-  padding: 0 30px;
+  padding: 0 150px;
   box-sizing: border-box;
-  width: 94%;
-  margin: 0 auto;
 }
 .clearfix #new_arrivalItem .scrollable {
   overflow-x: scroll;
@@ -298,24 +301,19 @@ No newline at end of file .tab_box {
 }
 .clearfix #new_arrivalItem .scrollable .new_arrivalList {
   display: flex;
-  width: 1365px;
-  margin: 20px 0;
   box-sizing: border-box;
+  overflow: scroll;
 }
 .clearfix #new_arrivalItem .scrollable .clearfix {
   zoom: 1;
 }
-.clearfix #new_arrivalItem .scrollable .clearfix .newarrival1 {
-  float: left;
-  width: 195px;
-  height: 300px;
-}
 .clearfix #new_arrivalItem .scrollable .clearfix .newarrival1 .listInner {
   text-align: center;
   font-size: 11px;
+  max-width: 1000px;
 }
 .clearfix #new_arrivalItem .scrollable .clearfix .newarrival1 .listInner a .photo img {
-  max-width: 100%;
+  width: 100%;
 }
 .clearfix #new_arrivalItem .scrollable .clearfix .newarrival1 .listInner a .ico-box {
   text-align: left;
@@ -339,57 +337,6 @@ No newline at end of file .tab_box {
   text-align: left;
   float: left;
 }
-.clearfix .scroll-left {
-  top: 173px;
-  left: 0;
-  transform: translateX(-5px);
-  position: absolute;
-  border: 1px solid #dadada;
-  width: 30px;
-  height: 30px;
-  box-sizing: border-box;
-  background-color: white;
-  display: block;
-  transition: 0.3s;
-  margin-left: 65px;
-}
-.clearfix .scroll-left::before {
-  width: 6px;
-  height: 6px;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: rotate(-45deg) translate(1px, -3px);
-  content: "";
-  display: block;
-}
-.clearfix .scroll-right {
-  top: 173px;
-  right: 0;
-  transform: translateX(5px);
-  position: absolute;
-  border: 1px solid #dadada;
-  width: 30px;
-  height: 30px;
-  box-sizing: border-box;
-  background-color: white;
-  transition: 0.3s;
-  margin-right: 65px;
-}
-.clearfix .scroll-right::before {
-  width: 6px;
-  height: 6px;
-  border-top: 1px solid #575757;
-  border-right: 1px solid #575757;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: rotate(45deg) translate(-5px, 0px);
-  content: "";
-  display: block;
-}
 
 footer {
   background-color: rgb(218, 236, 244);
@@ -398,7 +345,7 @@ footer {
 }
 footer .footer-main {
   display: flex;
-  margin: 50px 200px;
+  justify-content: space-evenly;
 }
 footer .footer-main .footer-left h3 {
   font-size: 20px;
@@ -408,9 +355,6 @@ footer .footer-main .footer-left h3 {
 footer .footer-main .footer-left img {
   width: 300px;
   height: auto;
-}
-footer .footer-main .footer-mannaka {
-  padding: 0 150px;
 }
 footer .footer-main .footer-mannaka h3 {
   font-size: 20px;
@@ -430,7 +374,7 @@ footer .footer-main .footer-right p {
 }
 footer .icon-f {
   display: flex;
-  margin: 20px 500px;
+  justify-content: center;
   padding-bottom: 30px;
 }
 footer .icon-f img {
@@ -442,4 +386,25 @@ footer .icon-f img {
 footer .icon-f p {
   font-size: 15px;
   margin-top: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .movablearea ul {
+    margin: 0;
+  }
+  .movablearea span {
+    letter-spacing: 0;
+  }
+  .clearfix #new_arrivalItem {
+    padding: 0 0px;
+  }
+  .clearfix .scroll-left {
+    left: -21px;
+  }
+  .clearfix .scroll-right {
+    right: -21px;
+  }
+  footer .footer-main .footer-left img {
+    width: 240\\px;
+  }
 }/*# sourceMappingURL=style.css.map */
