@@ -29,6 +29,7 @@
             img {
                 width: 65px;
                 height: auto;
+                max-width: initial;
             }
 
             span {
@@ -122,6 +123,7 @@
             img {
                 width: 65px;
                 height: auto;
+                max-width: initial;
             }
 
             span {
@@ -164,7 +166,7 @@
     #new_arrivalItem {
         padding: 0 150px;
         box-sizing: border-box;
-        
+
         .scrollable {
             overflow-x: scroll;
             overflow-y: hidden;
@@ -180,16 +182,17 @@
                 zoom: 1;
 
                 .newarrival1 {
-                    
+
                     .listInner {
                         text-align: center;
                         font-size: 11px;
                         max-width: 1000px;
+
                         a {
                             .photo {
-                                
+
                                 img {
-                                   width: 100%;
+                                    width: 100%;
                                 }
                             }
 
@@ -289,93 +292,208 @@
 
 
 // フッター
-footer{
+footer {
     background-color: rgb(218, 236, 244);
     padding-top: 20px;
     margin-top: 100px;
-.footer-main{
-    display: flex;
-    justify-content: space-evenly;
-    
-    .footer-left{
-        h3{
-            font-size: 20px;
-            padding-bottom: 10px;
-            font-weight: bold;
+
+    .footer-main {
+        display: flex;
+        justify-content: space-evenly;
+
+        .footer-left {
+            h3 {
+                font-size: 20px;
+                padding-bottom: 10px;
+                font-weight: bold;
+            }
+
+            img {
+                width: 300px;
+                height: auto;
+            }
         }
-        img{
-            width: 300px;
-            height: auto;
+
+        .footer-mannaka {
+            h3 {
+                font-size: 20px;
+                padding-bottom: 10px;
+                font-weight: bold;
+            }
+
+            p {
+                padding-bottom: 10px;
+            }
+        }
+
+        .footer-right {
+
+            h3 {
+                font-size: 20px;
+                padding-bottom: 10px;
+                font-weight: bold;
+            }
+
+            p {
+                padding-bottom: 10px;
+            }
         }
     }
-    .footer-mannaka{
-        h3{
-            font-size: 20px;
-            padding-bottom: 10px;
-            font-weight: bold;
+
+    .icon-f {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+
+        img {
+            height: 30px;
+            width: auto;
+            margin-right: 5px;
+            margin-left: 10px;
         }
-        p{
-            padding-bottom: 10px;
-        }
-    }
-    .footer-right{
-        
-        h3{
-            font-size: 20px;
-            padding-bottom: 10px;
-            font-weight: bold;
-        }
-        p{
-            padding-bottom: 10px;
+
+        p {
+            font-size: 15px;
+            margin-top: 5px;
         }
     }
 }
-.icon-f{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-    img{
-        height: 30px;
-        width: auto;
-        margin-right: 5px;
-        margin-left: 10px;
-    }
-    p{
-        font-size: 15px;
-        margin-top: 5px;
-    }
-}
-}
-@media screen and(max-width:767px){
-    .movablearea{
-        ul{
+
+@media screen and(max-width:767px) {
+    .movablearea {
+        ul {
             margin: 0;
         }
-        span{
+
+        span {
             letter-spacing: 0;
         }
     }
-    
-    
-    .clearfix{
-        #new_arrivalItem{
+
+
+    .clearfix {
+        #new_arrivalItem {
             padding: 0 0px;
         }
-        .scroll-left{
+
+        .scroll-left {
             left: -21px;
         }
-        .scroll-right{
+
+        .scroll-right {
             right: -21px;
         }
     }
-    footer{
-        .footer-main{
-            .footer-left{
-                img{
+
+    footer {
+        .footer-main {
+            .footer-left {
+                img {
                     width: 240\\px;
                 }
             }
         }
-        
+
     }
+}
+@media screen and(max-width:414px) {
+#header{
+    display: block;
+    .menu{
+        margin-left: 40px;
+    }
+
+    .hamburger {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        position: relative;
+        z-index: 999;
+    }
+    #nav {
+        width: 50%;
+        height: 100vh;
+        background-color: #fff;
+        padding: 10rem 4rem 4rem;
+        position: fixed;
+        top: 0;
+        right: -300%;
+        transition: all .5s;
+        z-index: 99;
+    }
+
+    #nav {
+        .nav_menu_ul {
+
+            // display: block;
+            // list-style: none;
+            .nav_menu_li {
+                position: relative;
+                margin: 0;
+                border-bottom: 2px solid #333;
+                color: #000;
+                font-size: 17px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .hamburger span {
+        display: block;
+        width: 50%;
+        height: 3px;
+        background-color: gray;
+        position: absolute;
+        top: -100%;
+        right: 15%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .hamburger span:nth-child(1) {
+        top: -43px;
+    }
+    
+    .hamburger span:nth-child(2) {
+        top: -32px;
+    }
+    
+    .hamburger span:nth-child(3) {
+        top: -20px;
+    }
+    // ナビを開封する
+    #nav.is-active {
+        right: 0;
+    }
+
+    // 3本線をバッテンにする
+    .hamburger.is-active span:nth-child(1) {
+        top: -35px;
+        right: 15px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 70%;
+    }
+
+    .hamburger.is-active span:nth-child(2) {
+        display: none;
+    }
+
+    .hamburger.is-active span:nth-child(3) {
+        top: -23px;
+        right: 15px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 70%;
+    }
+}
+.movablearea{
+    ul{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+.slide-items{
+    width: 100%;
+}
+.footer-main{
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
 }

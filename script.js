@@ -10,15 +10,19 @@ $(".slide-items").slick({
     dots: true, // インジケーター
   });
   
-  
-  $('#ham-btn').on('click', function () {
-    $(this).toggleClass('on');
-  })
-  
-  
-  $('#ham-btn').on('click', function () {
-    $('.ham-btn, .nav').toggleClass('show');
+  $('.hamburger').on('click', function () {
+
+    $(this).toggleClass('is-active');
+    $('#nav').toggleClass('is-active');
   });
+  // $('#ham-btn').on('click', function () {
+  //   $(this).toggleClass('on');
+  // })
+  
+  
+  // $('#ham-btn').on('click', function () {
+  //   $('.ham-btn, .nav').toggleClass('show');
+  // });
   
   
   $('.tab_box .tab_btn').click(function() {
